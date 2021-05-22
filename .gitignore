@@ -6,7 +6,7 @@
 /build/
 #/test/
 /accounts.json
-/truffle-config.js
+#/truffle-config.js
 /.env
 #/.env.example
 /.DS_Store
