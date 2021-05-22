@@ -2,6 +2,18 @@
 pragma solidity 0.6.12;
 
 /*
+
+ganache-cli \
+    --keepAliveTimeout 25000 \
+    -h 0.0.0.0 \
+    -p 8545 \
+    -i 56 \
+    --chainId 56 \
+    -l 100000000 \
+    -a 10 \
+    -e 100000000 \
+    -m "lawsuit cushion artwork warfare segment exact thought age alert shoe coast antenna"
+
 truffle compile
 truffle migrate --network development
 truffle migrate
