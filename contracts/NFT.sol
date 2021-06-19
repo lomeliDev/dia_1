@@ -11,7 +11,7 @@ contract NFT is ERC721, Ownable {
 
     // Last NFT id created
     uint256 public lastId;
-
+    
     constructor(string memory _name, string memory _alias) ERC721(_name, _alias) public {
 
     }

@@ -15,6 +15,10 @@ module.exports = {
       //gasPrice: 1000000000,
       skipDryRun: true
     },
+    ropsten: {
+      provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://ropsten.infura.io/v3/b4cd6e382efc48358ab09ec51e55166a"),
+      network_id: 3,
+    },
     bsc: {
       provider: () => new HDWalletProvider(process.env.MNENOMIC, "https://bsc-dataseed4.ninicoin.io/"),
       network_id: 56,
@@ -33,7 +37,8 @@ module.exports = {
   ],
   api_keys: {
     bscscan: process.env.BSCSCAN_API_KEY,
-    ftmscan: process.env.FTMSCAN_API_KEY
+    ftmscan: process.env.FTMSCAN_API_KEY,
+    etherscan: process.env.ETHCAN_API_KEY,
   },
   compilers: {
     solc: {
@@ -43,7 +48,7 @@ module.exports = {
           enabled: true,
           runs: 200
         }
-      }      
+      }
     }
   }
 }
